@@ -1,12 +1,12 @@
 .btn-bd-primary {
-    --bs-btn-font-weight: 800;
+    --bs-btn-font-weight: 600 !important;
     --bs-btn-color: #FFFFFF !important;
     --bs-btn-bg: #FCA920 !important;
 
     --bs-btn-border-radius: 60px !important;
-    padding: 24px 34px !important;
+    padding: 12px 17px !important;
     /* Altura confortável e largura adequada */
-    font-size: 1.25rem;
+    font-size: 1rem;
     /* Aumenta a legibilidade */
 
 }
@@ -18,7 +18,10 @@
 
 }
 
-.text {
+
+
+.text-center{
+    text-align: center;
     color: #FFFFFF;
 }
 
