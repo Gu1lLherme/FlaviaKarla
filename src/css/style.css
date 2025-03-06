@@ -35,3 +35,44 @@
     /* Faz a section ocupar toda a altura da tela */
     text-align: center;
 }
+
+img{
+    background-image: url(image/frame_1/img_fundo_hero.png);
+    background-size: content-visibility;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background escuro com imagem de fundo */
+.background_hero {
+    background: url(image/frame_1/img_fundo_hero.png) no-repeat center/cover;
+
+}
+
+/* Estilização do título */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/* Destaque nas palavras-chave */
+.text-highlight {
+    color: #FCA311;
+    font-weight: 700;
+}
+
+/* Logo menor */
+.logo {
+    width: 120px;  /* Ajuste conforme necessário */
+}
+
+/* Imagem da mentora */
+.mentor-image {
+    max-width: 100%;
+    height: auto;
+}

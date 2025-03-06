@@ -1,106 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-
-    <!-- Swiper.js CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-
-    <!-- Swiper.js JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-</head>
-
-<body>
-    <!-- FRAME 4 - DEPOIMENTOS -->
-    <section class="my-5 my-md-7 my-lg-9">
-        <h1 class="text-center"> Veja o Que Nossos Alunos Dizem </h1>
-
-
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <!-- Slide 1 -->
-                <div class="swiper-slide">
-                    <div class="testimonial-card">
-                        <img src="avatar1.png" alt="João Silva">
-                        <h4>João Silva</h4>
-                        <p>Líder Contábil da EMS</p>
-                        <p>“Nunca imaginei que aprender contabilidade fosse tão prático e claro...”</p>
-                    </div>
-                </div>
-
-                <!-- Slide 2 -->
-                <div class="swiper-slide">
-                    <div class="testimonial-card">
-                        <img src="avatar2.png" alt="Maria Oliveira">
-                        <h4>Maria Oliveira</h4>
-                        <p>CEO Sony</p>
-                        <p>“Os cursos transformaram minha forma de estudar contabilidade...”</p>
-                    </div>
-                </div>
-
-                <!-- Slide 3 -->
-                <div class="swiper-slide">
-                    <div class="testimonial-card">
-                        <img src="avatar3.png" alt="Lucas Pereira">
-                        <h4>Lucas Pereira</h4>
-                        <p>Product Owner</p>
-                        <p>“Fazer parte dos cursos foi a melhor decisão que tomei...”</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Botões de navegação -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
-
-        <!-- Botão abaixo do conteúdo -->
-        <div class="d-grid gap-2 col-4  mt-4 mx-auto  ">
-            <button class="btn btn-bd-primary  " type="button">QUERO APRENDER AGORA</button>
-        </div>
-
-    </section>
-
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            loop: true,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            breakpoints: {
-                768: {
-                    slidesPerView: 2
-                },
-                1024: {
-                    slidesPerView: 3
-                }
-            }
-        });
-    </script>
-
+    <title>Mentoria Exame CFC</title>
     <style>
-        .testimonial-card {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
         }
-
-        .testimonial-card img {
-            width: 50px;
-            border-radius: 50%;
-            margin-bottom: 10px;
+        body {
+            background-color: #0c1220;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: left;
+        }
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            background: url('image/frame_1/img_fundo_hero.png') no-repeat center center/cover;
+            padding: 50px;
+            border-radius: 10px;
+            position: relative;
+        }
+        .title {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .highlight {
+            color: #fdb813;
+        }
+        .text {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+        .cta-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background-color: #fdb813;
+            color: #0c1220;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+        }
+        .cta-button:hover {
+            background-color: #e0a10f;
+        }
+        .logo {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+        }
+        .mentora {
+            position: absolute;
+            bottom: 0;
+            right: 20px;
+            width: 250px;
         }
     </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Mentoria <span class="highlight">Exclusiva</span> para o <span class="highlight">Exame do CFC</span></h1>
+        <p class="text">
+            <strong>Descomplico</strong> a <span class="highlight">contabilidade</span> para você <span class="highlight">aprender</span> e <strong>fixar</strong> com <strong>facilidade</strong> esses <span class="highlight">conhecimentos</span>.<br>
+            Vou te mostrar o <span class="highlight">caminho</span> a transitar, o que <span class="highlight">estudar</span> exatamente como se <strong>EU</strong> estivesse no seu lugar.
+        </p>
+        <a href="#" class="cta-button">QUERO ENTRAR NA MENTORIA</a>
+       
+        <img src="image/frame_1/img_hero_1.png" alt="Imagem da Mentora" class="mentora">
+    </div>
 </body>
-
 </html>
