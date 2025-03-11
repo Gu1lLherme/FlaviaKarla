@@ -1,5 +1,16 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #14213D;
+}
+
 .btn-bd-primary {
-    --bs-btn-font-weight: 600 !important;
+    --bs-btn-font-weight: 45 !important;
     --bs-btn-color: #FFFFFF !important;
     --bs-btn-bg: #FCA920 !important;
 
@@ -11,27 +22,16 @@
 
 }
 
-
 .btn-bd-primary:hover {
     --bs-btn-hover-color: #FCA920 !important;
     --bs-btn-hover-bg: #FFFFFF !important;
-
 }
 
 
 
-.text-center{
+.text-center {
     text-align: center;
     color: #FFFFFF;
 }
 
 
-.section-center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: last baseline;
-    height: 100vh;
-    /* Faz a section ocupar toda a altura da tela */
-    text-align: center;
-}

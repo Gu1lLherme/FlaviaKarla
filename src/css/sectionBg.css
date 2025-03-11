@@ -1,0 +1,80 @@
+.section-bg {
+    position:relative;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #14213D;
+    width: 100%;
+    height: vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Camada de opacidade sobre a imagem */
+.section-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 33, 61, 0.6); /* Azul escuro com 85% de opacidade */
+    z-index: 0;
+}
+
+/* Garante que o conteúdo fique acima da imagem */
+.section-content {
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+}
+
+
+/* Em telas maiores, mantemos o tamanho automático */
+@media (min-width: 1024px) {
+    .section-bg {
+        background-size:auto; /* Garante que a imagem preencha a tela */
+    }
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 767px) {
+    .section-bg {
+        background-size: cover; /* Em mobile, mantém o preenchimento total */
+        background-position: center;
+    }
+}
+
+/* Estilos adicionais  */
+.section1 {
+    background-image: url('../image/frame_1/img_fundo_hero.png');;
+}
+
+.section2 {
+    background-image: url('../image/frame_2/img_fundo_beneficios.png');
+}
+
+.section3 {
+    background-image: url('../image/frame_3/img_fundo_mentoria.png');
+}
+
+.section4 {
+    background-image: url('../image/frame_4/img_fundo_depoimentos.png');
+}
+
+.section5 {
+    background-image: url('../image/frame_5/img_fundo.jpg');
+}
+
+.section6 {
+    background-image: url('../image/frame_6/img_fundo_bonus_exclusivo.png');
+}
+
+.section7 {
+    background-image: url('../image/frame_7/img_fundo_FAQ.jpg');
+}
+
+.section8 {
+    background-image: url('../image/frame_8/img_fundo_footer.png');
+}
