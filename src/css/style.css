@@ -1,4 +1,6 @@
-/* Reset */
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Ubuntu:wght@700&family=Merriweather+Sans:wght@700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,32 +8,79 @@
 }
 
 body {
+    font-family: 'Raleway', sans-serif;
     background-color: #14213D;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
-.btn-bd-primary {
-    --bs-btn-font-weight: 45 !important;
-    --bs-btn-color: #FFFFFF !important;
-    --bs-btn-bg: #FCA920 !important;
-
-    --bs-btn-border-radius: 60px !important;
-    padding: 12px 17px !important;
-    /* Altura confortável e largura adequada */
-    font-size: 1rem;
-    /* Aumenta a legibilidade */
-
+/* Evita que qualquer seção ultrapasse a tela */
+section {
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
 }
 
-.btn-bd-primary:hover {
-    --bs-btn-hover-color: #FCA920 !important;
-    --bs-btn-hover-bg: #FFFFFF !important;
+/* === TÍTULO PRINCIPAL === */
+.title {
+    margin-top: 20px;
+    font-size: clamp(30px, 5vw, 65px); /* Adapta ao tamanho da tela */
+    font-weight: 800;
+    line-height: 1.2;
+    color: #FFF;
+    text-align: left; /* Ajustado para centralizar */
 }
 
-
-
-.text-center {
+.title-center {
     text-align: center;
-    color: #FFFFFF;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: clamp(30px, 5vw, 65px); /* Adapta ao tamanho da tela */
+    font-weight: 800;
+    line-height: 1.2;
+    color: #FFF;
+}
+
+.highlight {
+    color: #FCA920;
+}
+
+/* === SUBTÍTULO === */
+.subtitle {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #FFF;
+    text-align: left;
+    max-width: 550px;
+    margin-top: 20px;
+}
+
+strong {
+    text-decoration: underline;
 }
 
 
+/* === BOTÃO DE AÇÃO === */
+.btn-container {
+    margin-top: 20px;
+}
+
+.btn-primary {
+    background: #FCA920;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 60px;
+    padding: 20px 40px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #fff;
+    color: #FCA920;
+}

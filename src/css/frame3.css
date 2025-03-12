@@ -6,7 +6,7 @@
     align-items: center;
     text-align: center;
     padding: 10vh 5vw; /* Adapta a altura e largura ao tamanho da tela */
-    background: url("Leonardo_Phoenix_10_A_serene_and_organized_accounting_classroo_3.jpg") center/cover no-repeat;
+    background: url("../image/frame_3/img_fundo_mentoria.png") center/cover no-repeat;
     min-height: 100vh;
 }
 
@@ -27,15 +27,7 @@
     z-index: 1;
     max-width: 1200px;
     width: 100%;
-}
-
-/* === TÍTULO === */
-.section-title {
-    font-size: 5vw; /* Adapta dinamicamente ao tamanho da tela */
-    font-weight: 800;
-    text-decoration: underline;
-    color: #FFF;
-    margin-bottom: 3vh;
+    overflow: hidden;
 }
 
 /* === SUBTÍTULO === */
@@ -49,27 +41,26 @@
 /* === GRID DOS MÓDULOS === */
 .grid-modulos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Se ajusta automaticamente */
+    grid-template-columns: repeat(2, 1fr); /* Se ajusta automaticamente */
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto 5vh;
 }
 
 
-
 /* === CAIXAS DOS MÓDULOS === */
 .modulo-box {
-    background-color: rgba(255, 255, 255, 0.15);
-    padding: 3vh 2vw;
-    font-size: 2vw;
-    font-weight: 400;
-    color: #FFF;
-    border-radius: 45px;
-    height: auto; /* Permite que o conteúdo ajuste a altura */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: #14213D;;
+    font-size: 25px;
+    font-weight: 900;
+    padding: 3vh 2vw;
+    height: auto;  
+    color: #FFF;
+    border-radius: 45px;
     border: 3px solid #FFF;
 }
 

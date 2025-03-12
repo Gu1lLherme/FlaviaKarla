@@ -11,12 +11,12 @@
     <link rel="icon" type="image/png" sizes="16x16" href="image\favicon\favicon-16x16.png">
     <link rel="manifest" href="image\favicon\site.webmanifest">
 
-    
-    <link rel="stylesheet" href="css/test/style.css">
-    <link rel="stylesheet" href="css/test/hero.css">
-    <link rel="stylesheet" href="css/test/frame2.css">
-    <link rel="stylesheet" href="css/test/frame3.css">
-    <link rel="stylesheet" href="css/test/frame4.css">   
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/frame2.css">
+    <link rel="stylesheet" href="css/frame3.css">
+    <link rel="stylesheet" href="css/test/frame4.css">
 
 </head>
 
@@ -34,12 +34,13 @@
                 </h1>
                 <p class="subtitle">
                     <strong>Descomplico</strong> a <span class="highlight">contabilidade</span> para você
-                    <span class="highlight">aprender</span> e <strong>fixar</strong> com <strong>facilidade</strong>
+                    <span class="highlight">aprender</span> e <span class="highlight">fixar</span> com
+                    <strong>facilidade</strong>
                     esses
                     <span class="highlight">conhecimentos</span>. Vou te mostrar o <span
                         class="highlight">caminho</span>
                     a <strong>transitar</strong>, o que <span class="highlight">estudar</span> exatamente como se
-                    <strong>EU</strong> estivesse no seu lugar.
+                    <span class="highlight">EU</span> estivesse no seu lugar.
                 </p>
 
                 <!-- Área do botão, logo e imagem da mentora -->
@@ -65,74 +66,193 @@
     </section>
 
     <section class="section-beneficios">
-        <div class="background-overlay"></div>
+        <div class="beneficio-bg"></div>
 
         <div class="container">
-            <h1 class="section-title">Faça por VOCÊ!</h1>
+            <h1 class="title-center">Faça por <span class="highlight">VOCÊ!</span></h1>
 
-            <div class="grid-beneficios">
-                <div class="beneficio-box">Juntos, sua decisão agora pode mudar tudo.
-                    Muitos já começaram essa jornada, e o próximo passo está nas suas mãos!</div>
-                <div class="beneficio-box">Caminhada sozinho,
-                    sem direcionamento, é complicado. 
-                   Na Tropa SENTA, o acompanhamento faz diferença para quem se compromete!</div>
-                <div class="beneficio-box">Você é livre, mas conhecimento 
-                    transforma escolhas. 
-                    O que você aprende hoje
-                     pode abrir portas que antes pareciam distantes.</div>
-                <div class="beneficio-box">“Sumimasen”, isto não acaba aqui…</div>
+            <div class="grid-modulos">
+
+                <div class="modulo-box">
+                    <p>
+                        Juntos, sua decisão agora pode mudar tudo.
+                        Muitos já começaram essa jornada, e o próximo passo está nas suas mãos!
+
+                    </p>
+                </div>
+
+                <div class="modulo-box">
+                    <p>Caminhada sozinho,
+                        sem direcionamento, é complicado.
+                        Na Tropa SENTA, o acompanhamento faz diferença para quem se compromete!</p>
+                </div>
+
+                <div class="beneficio-box">
+                    <p>Você é livre, mas conhecimento
+                        transforma escolhas.
+                        O que você aprende hoje
+                        pode abrir portas que antes pareciam distantes.</p>
+                </div>
+
+                <div class="beneficio-box">
+                    <p>“Sumimasen”, isto não acaba aqui…</p>
+                </div>
             </div>
 
-            <button class="cta">QUERO ENTRAR NA MENTORIA</button>
+            <div class="btn-container">
+                <button class="btn-primary">QUERO ENTRAR NA MENTORIA</button>
+            </div>
+
+
         </div>
     </section>
 
     <section class="section-roadmap">
         <div class="background-overlay"></div>
-    
+
         <div class="container">
-            <h1 class="section-title">Mentoria para o Exame de CFC</h1>
+            <h1 class="title-center"><strong>Mentoria</strong> para o <span class="highlight">Exame de CFC</span></h1>
             <h3 class="section-subtitle">Módulos da Mentoria</h3>
-    
+
             <div class="grid-modulos">
+                <!-- Modulo - 1 -->
                 <div class="modulo-box">
-                    <img src="icon1.png" alt="Ícone">
+
+                    <svg width="91" height="91" viewBox="0 0 91 91" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect x="0.5" y="0.833984" width="90" height="90" fill="url(#pattern0_0_82)" />
+                        <defs>
+                            <pattern id="pattern0_0_82" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_0_82" transform="scale(0.0111111)" />
+                            </pattern>
+                            <image id="image0_0_82" width="90" height="90" preserveAspectRatio="none"
+                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE1klEQVR4nO2dS4gcRRiAK0Zd8ZUcBDVevIh5iOsmKEiiYjTKmohovIj4jhiW3KMHwZuYmwd1BcGTQlSym42gGEWMRzWmjUa8qNnJRTAvEnAV5JPf/Is9Y8/0s7r7n6kPBpbdmXp801NbXf9fNc4FAoFAIBAIBGIAE8A+4JQ+5OeJ+HMCJQFuAxb4P/K728uWH3D/Sr4U6NCfY8BlQVb5q/kV0tkVRP8n7AZgq3zUgaUZJa8C/swg+i9gTcYyl2obtmZ9jQmAa4DPesTMA88MEg4sBw6RHXnu8hTB27TuOJ8CK5xlgIuA7wbIkb9tBpbEXrME2AT8SH7kNfcklLc5pR3yJo05qwBPZBQ0D8wCcyn/+LLS0bJmE67gfjzmrAJMY4dpZxVgN3bY7awC7MEOe5xVdJy0wpyzCnAAO3zhDE/tTmOHUyaneMAO7DHlLAHcApzFHmeBm52R4WKHUcmLSNunGh9GVOZTwJvAe/qQRfgvjY3JWcZs+Wf+Qayf03q3O1bHAtHh1CYOPxFwtU/Rvatwo8x+n+vJgW5W+RD9cE8lAXjIh2iJSgS62eBD9Pk51nZHgU7WkFwR2RIKCpxjmxfJsbjboJDQqHBEPuHeRKtsib+NOlu8So4FO62N1QvATuAqfezMmMaQxNF48Ne37DljkicT+vB8wfL21iJZG/khhiULcgtdsMx9rg506KgiJaAxySVFd2oZOoB7MS5ZAF4oUf4m5xNN0yqSQdQ2yZN90oDzTO+W+ZK8RpcHR11yPI1sdZWCLwZeqqhxPpHp2v0Zhr0/KqxTslhfBS4vK/kOTfRuOws1XslJHCu88wBY66lhB4DtGlv8aggkx9txUxHREgesmnd6UmplRfCtIZC8yGwR0RKcrJprE+o5r6DstkkWThQRfbLiRvwNXNinrryy2yhZON6W9YyNA+rLKrutkgsPHRMeGvsTcEUJ2W2WLNPG8dyiYxspq17XiArKbrPkTun4oacbliOyLpyycPV6wzcjeW5YqttQqnv+DjZwZS+09Eo+6CWvQzu0DPihZtnjLZT8fenb7jSAuytudDRIdkvH5DurN1tPzDDKK7tByb/WGTP0EcqKsspuUHKxuXILg7NRmuyGJde3Ta6GdIOon+wWSBZ+ritmuKWGzkTAlQn1Ni15kUnfkutMCfsNeBF4EnhbF6XaQuQtwVFFP9t0D1vE0z6vZmupYD456uWq1gWmQDe3+hAtZxAFunnAV15HoJvrKhetsvf3VDTKfORFsopekfPkrmHlm955vg/ZY3LQE/BGbOvujOZr+IicN8VJ7dNMrJ/S50f7BZlrQ9+EKeOb7s9ogk/7z+6QoxiMyj4DrHOW0CvbGs85a+gwYmnMPtH42FsUORAKO3zurGJs99aMs4qxAwbfd1YxdmTmu84qOsG3wmvOKsDjGTv5i96B7a1ozXtey5rR9IAsPOKsolO8QwM6J2Gx+xIO1r6rYEaUHKy1sc9B3YdT1i4ucJbRHaqfFDh6XtLPvs0h+etByYaxo+d7s2M/9r5AVCfASuBBYH2OL1NYrRmbaUi26cqMZYrwDdqW60t3bFgAdmUQ/XLT7RyFL7yZBy5pup1DAedOKEtKMpffrW+6fUMFMK5TtuPA7zp1u7HpdgUCgUAgEAi4VvEPHNl67gwTTZoAAAAASUVORK5CYII=" />
+                        </defs>
+                    </svg>
                     <p>Aulas e oficinas de questões semanais ao vivo, focadas nas áreas mais cobradas do exame.</p>
                 </div>
+
+                <!-- Modulo - 2 -->
                 <div class="modulo-box">
-                    <img src="icon2.png" alt="Ícone">
-                    <p>Plano de estudos personalizado, ajustado à sua rotina e objetivos, garantindo máxima eficiência.</p>
+                    <svg width="91" height="91" viewBox="0 0 91 91" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect x="0.5" y="0.51416" width="90" height="90" fill="url(#pattern0_0_79)" />
+                        <defs>
+                            <pattern id="pattern0_0_79" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_0_79" transform="scale(0.0111111)" />
+                            </pattern>
+                            <image id="image0_0_79" width="90" height="90" preserveAspectRatio="none"
+                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAACjUlEQVR4nO3cX04TQQDH8X2ScgJAXzAKV9AHFYx6HvAYKM8K8RaGiH8S4inAE5iUqglC8PFrho5maXa2y3Z2Zqfz+yQkTSAzu9+W7WzbbVGIiIiIiIiIiIiISFPAJrAPnAAX5OfC7rtpsOn9kQPcBb7E3sse+gys+or8EBjF3qMeOwUezBp5FRjG3pME/ADuzRJah4vmjtpGfnqDSWRso01o88xa5RLYApaLzADLdt//ONq8bTPoN8dgW0XmgJeONsdtBjt3DLZUZA5YcrT53WawSp1seYK89VHoegodiEIHotCBKHQgCh2IQgei0IFkHRoYAK+A7/bH3F7oaK48QwOL9h2PSa87mi+/0MACcODY5FFHc+YVmvrIxrCjefMJzfiY/JF6OnR4iHw4JbI5Zg86mj+9RzTjf/9d+47yqb098BB5sYvtTTn0bsVUn6pi2zvlQ8zIKYceOaa7Fhu4BbyPHTnl0MOacFex+xR53g4dZQdTlnBBI9ttrhRvoGZzDRxndU0FjZxs6IYnHr2JnHTolrGjRE4+9A1jR4s8F6Ebxo4aeW5CT4kdPfJchS6tRnZKL+TvdPXaRdah+0yhA1HoQBQ6EIUORKEDUehAFDoQhQ5EoQNR6EAUOsHQrusMs7tidhJw29HmrPB45ex2kTk8Xzm75xjMXAe9DawUmQFWbGTXteBv2gz6xDGYuD1qew+aD69IM4etIpe+NsG8syH1zCet7rRdXYg/Z3WrC/HnxIR+53FAqbZnQr9w/FL8efbvOH3kcVC57mv5CXEd+DXxBzI703RtcvWxodhe/QQeu5Z6a+ah7ne+LJlD8f0mJyrP7ffeHWud3ci5bbX//4lPRERERERERKSYX38BLiSlWbSae3AAAAAASUVORK5CYII=" />
+                        </defs>
+                    </svg>
+                    <p>Plano de estudos personalizado, ajustado à sua rotina e objetivos, garantindo máxima eficiência.
+                    </p>
                 </div>
+
+                <!-- Modulo - 3 -->
                 <div class="modulo-box">
-                    <img src="icon3.png" alt="Ícone">
+                    <svg width="91" height="91" viewBox="0 0 91 91" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect x="0.5" y="0.139648" width="90" height="90" fill="url(#pattern0_0_89)" />
+                        <defs>
+                            <pattern id="pattern0_0_89" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_0_89" transform="scale(0.0111111)" />
+                            </pattern>
+                            <image id="image0_0_89" width="90" height="90" preserveAspectRatio="none"
+                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFEElEQVR4nO2dz4scRRTHK5K4IglKQJNsjD8gFxXxIIjoruhBIZA/wBy8e4k/iMkESQyIYnRzNMlJQfaqkogmCCoIBtEV/JWbmoN6WOMPUKObyZr9SDE1OJl0dXd11dS86qkPzGXoevXed3peVb2qnlEqk8lkMplMJhmAq4AngE+Bc4yXLnAKuFu1CeAG4CvksQQ8rFp0J0sUuV1im3QhnaXkxTY5OQWWkhYb+AtZ/N1KsZHHbMWHfx7YrlIDYaieT+0TG2Go//1ql9gIQ13qW3vERhjqcv/aITbCUMU+pi82wlB2P9MWG2Gocl/TFRthqGp/0xQbYah6PqcnNsJQ9f1OS2yEodx8T0dshKHc/U9DbIShmsUgX2yEoZrH8WCNEuv49iCRx/QIxT4VVj0356TR8YynTOxuOOXcHZNGV4s9qjs7rHpuTk0UKgsdhyx0JLLQkchCRyILHYksdCSy0JHIQkdCutBdYI9erZlXx7xXeX0E/+v4k4zQnYJ2HZfrI8TRaYPQmwrabXS5PkIcG9sg9HRBu80u10eIY3NbU8del+sjxLG3DUJ3+6VLh8HQq9Q5qYNhm1idhY7DR3rgzHd0HL4ApnLqiMO7wOfAWeB7YB64J+foeMwBV+TBMA6vBRc7hVoHsBp4xpw4suIZ4zCvBhVbeq0D2AR8UsdJzxhHK7bHEnza5fqGvt0B/FBXFc8YRyu2VKGBW4Gfa/i2DJwAniyxtRv4GLg41Fanoh3AQkUfh1pZ66BXifupwid9EulFlw/V3ByHzIFHLfI28/61FWKveE/9pNU66A18evVWxkn9Yy4eMd8IzAy9VyX2fNP++h2kxApwAFjlFbRdizKxv/M1nhKPBVPVrscjlr4XfQ2nwlwwNe1abCuZq3/mazwF3hvJsvhSHWYqFkQHfDuQzrKe6nnEdw2wD3gd2Gmr2pmtMNsB9l+B9W0X+ohHbDcDZ4bsnbANpsDzFh9+894wkFDrAO612NELjJs8lu7fWuzOlPz+37+WNg808WPQ+NhrHcAui50PGsa0Hvi6xL8dJW31HL2I/U18GTQ89iU48IbFztMN4llbUYS6UPYtMcv1Io67+iJR6C8tdu53tDMFvF8Ry1M1Zh9FnHbxpcjw2GsdwI8WOxsc7RytiOOFGja2WNr+7uJLkeGx1zqAfyx2phzv5jKfXqlp52pbTHV9sRmWzFrH3KxrIUXM113wmA+siPNtFnqrYyzvFNg45jIH1unK4ssvjQQeMCyZGcdYrjfHCFZMGjnqen4DuG+cg+G42N0wpnVND8iUTO/ebGJv0LBkPvQKrpkeesuriGd9DUvmAnBdMBXr5efhfcU+s77GpfNyMCWrtdCnlGzVuzW+xqVzTg9ywdQs30fUm7ZFHA7RQQocG9U+odFgFfCWpW89g7mzjT89b2NXEFWLNdhv7dW3mJTgnyksA48GCfryzdiLJYPx7aE6epx0WKmqvjmmi30lImsOhuhrcG1vK1NK5W1dZfMc+Gw5uc9C8KcCzBZOamL/CTynRXOcJ8+VzC76LAK3BBV56M7eaXYnUhkgMV/9k6Ys+5AR80rz2mD2I22HHIv4A7hLTRL0ju1WHXYMyeLEidxHf4XNQz2jZmFk6SIV6KWBl8x0KzTa5sHoj8NJBrjNzDhsOykuaBvHg82TW5y7j5hijyu6zeEgy+oJSymz5sy0nhefNse39O6KfmlRv9FFe3ONPkrQuAr3H7lIW4+dlLtFAAAAAElFTkSuQmCC" />
+                        </defs>
+                    </svg>
                     <p>Análise de desempenho contínua, com relatórios semanais, quinzenais e mensais.</p>
                 </div>
+
+                <!-- Modulo - 4 -->
                 <div class="modulo-box">
-                    <img src="icon4.png" alt="Ícone">
+                    <svg width="91" height="91" viewBox="0 0 91 91" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect x="0.5" y="0.333984" width="90" height="90" fill="url(#pattern0_0_86)" />
+                        <defs>
+                            <pattern id="pattern0_0_86" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_0_86" transform="scale(0.0111111)" />
+                            </pattern>
+                            <image id="image0_0_86" width="90" height="90" preserveAspectRatio="none"
+                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAADFUlEQVR4nO2ZMW4TQRSGJ01QKNyHNC7gAogrEC6QC0Abww2gNkfAdBQUXANIoCG5ggUJDUWETUPhD40yRRSR7M7u2/W/4/dJliLZ+ef9z2/njd+E4DiO4ziO4ziO4ziO4xQLcAd4AXwBlukV/34e31t3fEUA7AGn3MxJ/My64yyhkk9vSfLVZHtlNyVtF3WZNF5o0wG+ZiT6eN3xDhZgkZHoRRgaiHT5tG5dfofCuvy3rrs8sAW8BFZFbh3kdfntjmLYAd6Tz6TULn/Ywfq7mQ2w8y++E8gzeWS89kPge8Mk75Xc5ZfA2GjdA+BPxXo/4j6c1o1xHsXtYlCVHAH2M5tP5C8wa5rwjKYXn7TdMGSAEfCmQZKvJ/wdcD+z8cb/qeIDcDcMGS6reN4iwY0SXrPpxS9+Gqs+DLyKZy2ruCrhUf8B8Az4BPxK++tx2m9vI+7XB2HIdFDF1pwBj8LAq/htzSqepyb1GbhI1fgReJqqdJaq1pphNL3/zCgu0jHoVc0qXqXGOKqx1tg44fHX4E4oYEZRxRx43GDdtglfpadnq6QZxU1GZ3WquKOEL0OhM4rrVbxvHMu42PFmg0HMKjXGUUfxxB5R5HhzkZnkJx3HE2cQRY43F0qPKrCdpmqtxptJ5zVwXnHunvYyXFK8xATupduYxuPNlMC6TPswFe/y5B5VLk9Dh+ksnz3eTNVal7O+DLV+VNUgkz5/sJyUdBOBYqKvNI9JmpAtBn0TEYQT3RbEunzJiZ4qdfmSE32e4etnD/EUm+gsNi2eYo0hFk+xxhCLR84YRqcXT3Si69OLVTxyYGTM6vRiFY8cGBlT05EDsQRZ6ciBWIKsdMxQ6/KI6Zih1uUR0zFDrcsjpmOGmjHEdMxQM4aYjhlqxhDTMUPNGGI6ZqgZQ0zHDDVjiOmYoWYMMR0z1IwhpmOGmjHEdMxQM4aYjhlqxhDTMUPNGGI6ZqgZQ0zHDDVjiOmYoWYMMR0z1IwhpmOGmjHEdMxQM4aYjhlqxhDTMUPNGGI6ZqgZQ0zHcRzHcRzHcRzHcRwnbAD/AHS6nEKS43zVAAAAAElFTkSuQmCC" />
+                        </defs>
+                    </svg>
                     <p>Revisões programadas, para fixar o conteúdo e evitar o esquecimento.</p>
                 </div>
+
+                <!-- Modulo - 5 -->
                 <div class="modulo-box">
-                    <img src="icon5.png" alt="Ícone">
+                    <svg width="91" height="91" viewBox="0 0 91 91" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect x="0.5" y="0.459473" width="90" height="90" fill="url(#pattern0_0_96)" />
+                        <defs>
+                            <pattern id="pattern0_0_96" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_0_96" transform="scale(0.0111111)" />
+                            </pattern>
+                            <image id="image0_0_96" width="90" height="90" preserveAspectRatio="none"
+                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEzUlEQVR4nO2c26uVRRTAl+nJzNTK1DTTniwLoreQivoHkrSHtKL+gErpIhX1EnahixJlni1dCOlCRViKFVQERT2XlzzRQ0WPXo7mMTCKXwx7Hg6Hs9Z8+/6t2fOD/bL3t9bMWnu+NWvWN/OJFAqFQqFQKBQKhVoBnAPMkJpT+34C5wOvASfJl3FgBzBnkI5uMDw0Bnm7/c3wcCbYXBydq6OHMHSMDsTJ0dFzgFfjhJErJ4BXBjoZauAc8QLOES/gHPECzhEv4BzxAs4RLwD/KDacJzUhpqbTcVa8YBSZLpWaACxT+nhCvAD8qRhxrdQE4Dqlj3+IF4DvFSPulpoA3Kv08VvxAvCOYsR2qQnAy0ofd4sXgC2KEUekJgC/KH18SLwA3IzOlTXo3zVG/24UL8TUKdRvp+PFGvRvu9K303VKQSsBfGKUHecOsF8XGGXdj8UbwJ3G7fl4QvZh2seMscCThuwG8Ua4BYHjikHjwCWG7O0dOHqdoXcxcEqROwrMFo8AzxkO2W3IXWgs4y3OAgsMve8bsk+LV+IImjCMW9vl55E7DX3rDbkwCS4Uz4R4jM5JLd0DFoXlcAtO/k0LR8BVRsgIbBHvACPAQcPIn4H5Rr77e0UnX63oWACMGbI/AbMkB4A1wH+Gsfs0Y+PIbsT4O5Xw3U5jJI9E3RqhT9dLTgBbE6PyQ2tkxZEZ4uyD8bM+MfEFJ3+UaPMpyQ1gRnSmRXDMSBfamgm8l2hrz8B2HvUaYB5wIOGA/eG6DtqYD3yeaOPHsEKUnAGWAIcSjgh/xso2dF+RmHiJvy+WYYDmBJca2SH129iCznXGSnRyhlObx2l9AbgI+Io0DWtpHH4DdlXQ82VoU4YRmplBSM9SbGuj5DmZHdnkyp0AbEis3I4asscMuaDzjv5aU2OAjT10tL/SZ49Cx64Kt/5Lho5tFeRHu5GfuwRYCHxT0UnnJibDKpW+r4GLZZigWT5N5bvjrdz2Mb2zwkjgCLBUhgFgaTSYREVtRRu6V1bIzw9nn0vTXB6nVoX7OlyCh2X+Z4k2DnTSRq2heS5xb4Wi0qwuFZXeTbQV/oyZkhvAMwnDP+jmoiLoqlAt3Co5AdyQKPzv7cXKLTo7VfhfIzkQUjPsuDxmFfC70P68OAFqHMwix05sWDkFrO5DH1YlDp0+JhnUns8YBt7ax77cZvQjbIlYJF4BXjCMe7uijhXAA8AXMcxMxM9Y/O5+4PKKuqxM5FnxSNxRGjY0Tsd4asMKsBx4E/iXNOGaN4DLKjxw0IpXx9ztJA2EYxTtxkSat3nYPdQqf1m7n6LuJwz5yk90agPwqWLM8fCKIENucyIVTBFkNxn65xp32h7xRHzXkjYJPp8YyZ04ebKz17ZRWp1wFT6AWwwnrDJicjvhwgojy5S2VhtyN4kXgEcVIw4bMm/RfV432tP24z0iuR5/o5nCVckuWiXoXJ7z8bcfFCPuUq7fRO+4T2nzHuX67yTXI8qkt3B1wv6cjyhrh+6XKNf/2kNHjxlPetwfutfOn8xWru9mtjGV08ZhJvevkXCNeAHniBdwjngB54gXcI54AedI3ShvRO8TQ/Za48agnFzeiN4PiqP7yJCFjtF++naqo8sb0QuFQqFQKBQKhUJBnPM/iABTeiGHfQgAAAAASUVORK5CYII=" />
+                        </defs>
+                    </svg>
+
                     <p>Simulados inteligentes: um simulado inicial e simulados mensais para medir o progresso.</p>
                 </div>
+
+                <!-- Modulo - 6 -->
                 <div class="modulo-box">
-                    <img src="icon6.png" alt="Ícone">
+                    <svg width="91" height="91" viewBox="0 0 91 91" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect x="0.5" y="0.639648" width="90" height="90" fill="url(#pattern0_0_93)" />
+                        <defs>
+                            <pattern id="pattern0_0_93" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_0_93" transform="scale(0.0111111)" />
+                            </pattern>
+                            <image id="image0_0_93" width="90" height="90" preserveAspectRatio="none"
+                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEFklEQVR4nO2cS4hPURzH/8Zj5D3EAglZ2bCaSMgrj4m8KYmFZMqMPEoSC7YWoqxsiR1RZmeHyWKUIkoWJDbKPBjj8dFp7uJvuvfcc+6599x7Zn6f9bnnfH8f173nnP+dU6sJgiAIgiAIgiAIgiAIgiAIOoBGoA14CnRTPN3AE+A4MG645UwKPxd4QXl0AXOGS07dHVJm+PoiGkPPqROt/htWhbbQc+pEq2ddVegMPadOtI8Xiil9oefUif5DtWgIOaeIzp8RL/o9cDea+5ryHLgDvBXRGD06btYvKoCWlGf7D2B/XfsxwBVD2SP2jv4EjI+5biXQE9O+H9gS036M4Z09YkU/0tS4CugdIrlF0/5WWaJVm/PANGAm0A4MUC3Rb4BRmjpXR7J/AltTnHSWJfpizHWHqd707khKrWuAbSltdrrkdBU9P+Ha+1RL9IASZSXg/zHWq8WIS05d5yYFLEy4djbwNaZ9P3AGaAKmAq1DnpHWBVi8S5TsXRkkbwC+G45RmOhLmusPxUjeHNOu1aUAy5e2kr3HwsFGS8mJOXWDmBSg5C3W9HEvavcz6RkITDEcK68l+G/ggKFkNZ+2pbDpndo9G615hHzWvWiiGctfj6LVP/p2g/qT5tmliVac0PQzI2WcEy4FWObsT5vCJUz9KiO6N+nFmDLGOotnoKto7WIkZVFjc2cXvjJ8rFsYGKzKMhVgmDPxHWECsMJi39vLEvyYxZ3cZ9m3i+iDKXk2AXtT2rS45Mxb9DdgXgGSXUS/Mpxd/AJ2p7R9UqVNpY4CJLuI7rBYjGhXkMDtKolWHI3pb62D5MQCDHJ+ASYkLKvjXsRK9o6Y9mOBd1UTrRYFJ4HJwCzgVIYVllEBhjlv1csG9qXkGajfiIq+HbnhkrMo0UXQ4JhTLZweAi8txnwNPAA+uuYcSaJ9IaI9IaI9IaI9IaJDFq2mQWfVFM6q89rgrl70Y66PTaXSc+oGMCnggm3woURfzGcuIJSchfw4azlOk4eN/9Jz6jo2KWBRDgVM9yC69Jy6jk0KuJxDAacNxkksIJScuo5NClBbi5eBBRmCzwPORb98ZC4glJy6AYJY2hJIThGdPyLaEyLaEyLaEyLaE7LXgex1GCF7HS4gex1h7CEQSE5dx0HsIRBITl3HQewhEEhO3QBB7CEQSE4RnT8iuqqi1Se4VaIhgEdHj5XkCh6hE4roziJ/9fVFQwCiMx1eVZVjzkIR3ZX5oMEKHNwXiujsBwwOubPboyMUXL7YH26ilYtn0bl7bkdmlgGDfyWwHLge/dmaqWi1crsGLFN9+E8eMMDSuq/tdaI/AEv8Jxx+svs1otXHhyI5J9nXNKKv5jKIUFMymzWim8VRTgATNaIniWhBEARBEARBEIRadv4BDvnnhEo32UIAAAAASUVORK5CYII=" />
+                        </defs>
+                    </svg>
+
                     <p>Técnica Pomodoro com cronômetro, para potencializar seu foco e produtividade.</p>
                 </div>
+                <!-- Modulo - 7 -->
                 <div class="modulo-box">
-                    <img src="icon7.png" alt="Ícone">
+                    <svg width="91" height="91" viewBox="0 0 91 91" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect x="0.5" y="0.279297" width="90" height="90" fill="url(#pattern0_0_103)" />
+                        <defs>
+                            <pattern id="pattern0_0_103" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_0_103" transform="scale(0.0111111)" />
+                            </pattern>
+                            <image id="image0_0_103" width="90" height="90" preserveAspectRatio="none"
+                                xlink:href="data:image/png;base64,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" />
+                        </defs>
+                    </svg>
                     <p>Acompanhamento individual, com feedback especializado para corrigir falhas.</p>
                 </div>
+
+                <!-- Modulo - 8 -->
                 <div class="modulo-box">
-                    <img src="icon8.png" alt="Ícone">
+                    <svg width="91" height="91" viewBox="0 0 91 91" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect x="0.5" y="0.459473" width="90" height="90" fill="url(#pattern0_0_100)" />
+                        <defs>
+                            <pattern id="pattern0_0_100" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_0_100" transform="scale(0.0111111)" />
+                            </pattern>
+                            <image id="image0_0_100" width="90" height="90" preserveAspectRatio="none"
+                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE1klEQVR4nO2dS4gcRRiAK0Zd8ZUcBDVevIh5iOsmKEiiYjTKmohovIj4jhiW3KMHwZuYmwd1BcGTQlSym42gGEWMRzWmjUa8qNnJRTAvEnAV5JPf/Is9Y8/0s7r7n6kPBpbdmXp801NbXf9fNc4FAoFAIBAIBGIAE8A+4JQ+5OeJ+HMCJQFuAxb4P/K728uWH3D/Sr4U6NCfY8BlQVb5q/kV0tkVRP8n7AZgq3zUgaUZJa8C/swg+i9gTcYyl2obtmZ9jQmAa4DPesTMA88MEg4sBw6RHXnu8hTB27TuOJ8CK5xlgIuA7wbIkb9tBpbEXrME2AT8SH7kNfcklLc5pR3yJo05qwBPZBQ0D8wCcyn/+LLS0bJmE67gfjzmrAJMY4dpZxVgN3bY7awC7MEOe5xVdJy0wpyzCnAAO3zhDE/tTmOHUyaneMAO7DHlLAHcApzFHmeBm52R4WKHUcmLSNunGh9GVOZTwJvAe/qQRfgvjY3JWcZs+Wf+Qayf03q3O1bHAtHh1CYOPxFwtU/Rvatwo8x+n+vJgW5W+RD9cE8lAXjIh2iJSgS62eBD9Pk51nZHgU7WkFwR2RIKCpxjmxfJsbjboJDQqHBEPuHeRKtsib+NOlu8So4FO62N1QvATuAqfezMmMaQxNF48Ne37DljkicT+vB8wfL21iJZG/khhiULcgtdsMx9rg506KgiJaAxySVFd2oZOoB7MS5ZAF4oUf4m5xNN0yqSQdQ2yZN90oDzTO+W+ZK8RpcHR11yPI1sdZWCLwZeqqhxPpHp2v0Zhr0/KqxTslhfBS4vK/kOTfRuOws1XslJHCu88wBY66lhB4DtGlv8aggkx9txUxHREgesmnd6UmplRfCtIZC8yGwR0RKcrJprE+o5r6DstkkWThQRfbLiRvwNXNinrryy2yhZON6W9YyNA+rLKrutkgsPHRMeGvsTcEUJ2W2WLNPG8dyiYxspq17XiArKbrPkTun4oacbliOyLpyycPV6wzcjeW5YqttQqnv+DjZwZS+09Eo+6CWvQzu0DPihZtnjLZT8fenb7jSAuytudDRIdkvH5DurN1tPzDDKK7tByb/WGTP0EcqKsspuUHKxuXILg7NRmuyGJde3Ta6GdIOon+wWSBZ+ritmuKWGzkTAlQn1Ni15kUnfkutMCfsNeBF4EnhbF6XaQuQtwVFFP9t0D1vE0z6vZmupYD456uWq1gWmQDe3+hAtZxAFunnAV15HoJvrKhetsvf3VDTKfORFsopekfPkrmHlm955vg/ZY3LQE/BGbOvujOZr+IicN8VJ7dNMrJ/S50f7BZlrQ9+EKeOb7s9ogk/7z+6QoxiMyj4DrHOW0CvbGs85a+gwYmnMPtH42FsUORAKO3zurGJs99aMs4qxAwbfd1YxdmTmu84qOsG3wmvOKsDjGTv5i96B7a1ozXtey5rR9IAsPOKsolO8QwM6J2Gx+xIO1r6rYEaUHKy1sc9B3YdT1i4ucJbRHaqfFDh6XtLPvs0h+etByYaxo+d7s2M/9r5AVCfASuBBYH2OL1NYrRmbaUi26cqMZYrwDdqW60t3bFgAdmUQ/XLT7RyFL7yZBy5pup1DAedOKEtKMpffrW+6fUMFMK5TtuPA7zp1u7HpdgUCgUAgEAi4VvEPHNl67gwTTZoAAAAASUVORK5CYII=" />
+                        </defs>
+                    </svg>
+
                     <p>Encontros semanais via Meet, para solucionar dúvidas e reforçar conteúdos.</p>
                 </div>
             </div>
-    
+
             <div class="btn-container">
                 <button class="btn-primary">QUERO ENTRAR NA MENTORIA</button>
             </div>
         </div>
     </section>
 </body>
+
 </html>
