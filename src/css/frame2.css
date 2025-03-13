@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-   
+
 }
 
 /* === SOBREPOSIÇÃO DA IMAGEM DE FUNDO === */
@@ -29,38 +29,32 @@
     z-index: 1;
 }
 
-/* === CONTEÚDO PRINCIPAL === */
-.container {
-    position: relative;
-    z-index: 1;
-    max-width: 1200px;
-    width: 100%;
-    overflow: hidden;
-}
-
 /* === GRID DOS BENEFÍCIOS === */
 .grid-beneficios {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Se ajusta automaticamente */
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    /* Se ajusta automaticamente */
+    gap: 10px;
     max-width: 1200px;
     margin: 0 auto 5vh;
 }
 
 /* === CAIXAS DOS BENEFÍCIOS === */
 .beneficio-box {
+
     background-color: rgba(255, 255, 255, 0.1);
-    padding: 3vh 2vw;
-    font-size: 100%;
-    font-weight: 700;
-    color: #FFF;
-    border-radius: 80px;
-    height: 280px;
-    width: 100%;
+
+    margin: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    padding: 3vh 2vw;
+    height: auto;  
+    border-radius: 45px;
+    border: 3px solid #FFF;
+
 }
 
 
@@ -68,26 +62,68 @@
 
 /* TELAS GRANDES (DESKTOP) */
 @media (min-width: 1025px) {
-    .section-title { font-size: 50px; }
-    .section-subtitle { font-size: 40px; }
-    .modulo-beneficio { font-size: 22px; }
-    .btn-primary { font-size: 20px; }
+    .section-title {
+        font-size: 50px;
+    }
+
+    .section-subtitle {
+        font-size: 40px;
+    }
+
+    .modulo-beneficio {
+        font-size: 22px;
+    }
+
+    .btn-primary {
+        font-size: 20px;
+    }
 }
 
 /* TELAS MÉDIAS (TABLETS) */
 @media (max-width: 1024px) {
-    .section-title { font-size: 40px; }
-    .section-subtitle { font-size: 30px; }
-    .modulo-beneficio { font-size: 20px; }
-    .grid-beneficio { grid-template-columns: repeat(2, 1fr); }
-    .btn-primary { font-size: 18px; width: 80%; }
+    .section-title {
+        font-size: 40px;
+    }
+
+    .section-subtitle {
+        font-size: 30px;
+    }
+
+    .modulo-beneficio {
+        font-size: 20px;
+    }
+
+    .grid-beneficio {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .btn-primary {
+        font-size: 18px;
+        width: 80%;
+    }
 }
 
 /* TELAS PEQUENAS (CELULARES) */
 @media (max-width: 768px) {
-    .section-title { font-size: 30px; }
-    .section-subtitle { font-size: 25px; }
-    .modulo-beneficio { font-size: 18px; padding: 5vh 3vw; }
-    .grid-beneficio { grid-template-columns: repeat(1, 1fr); }
-    .btn-primary { font-size: 16px; width: 100%; }
+    .section-title {
+        font-size: 30px;
+    }
+
+    .section-subtitle {
+        font-size: 25px;
+    }
+
+    .modulo-beneficio {
+        font-size: 18px;
+        padding: 5vh 3vw;
+    }
+
+    .grid-beneficio {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .btn-primary {
+        font-size: 16px;
+        width: 100%;
+    }
 }

@@ -1,0 +1,113 @@
+/* === SEÇÃO DEPOIMENTOS === */
+.section-depoimentos {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 80px 20px;
+    background: #1D2A45;
+}
+
+/* === FUNDO COM OPACIDADE === */
+.depoimentos-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../image/frame_4/img_fundo_depoimentos.png") center/cover no-repeat;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+/* === CONTAINER PRINCIPAL === */
+.container {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* === TÍTULO === */
+.title-center {
+    font-size: 50px;
+    font-weight: 700;
+    color: #FFF;
+    margin-bottom: 40px;
+}
+
+/* === SLIDER DOS DEPOIMENTOS === */
+.swiper {
+    max-width: 100%;
+    padding: 20px 0;
+}
+
+/* === CARTÃO DE DEPOIMENTO === */
+.testimonial-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 250px;
+}
+
+/* === IMAGEM DOS ALUNOS === */
+.testimonial-card img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* === NOME DOS ALUNOS === */
+.testimonial-card h4 {
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+/* === CARGO/ATUAÇÃO === */
+.testimonial-card .role {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* === TEXTO DO DEPOIMENTO === */
+.testimonial-text {
+    font-size: 16px;
+    color: #333;
+    font-style: italic;
+}
+
+
+/* === RESPONSIVIDADE === */
+@media (max-width: 1024px) {
+    .title-center {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .swiper {
+        padding: 10px 0;
+    }
+
+    .testimonial-card {
+        min-height: 220px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title-center {
+        font-size: 30px;
+    }
+
+    .btn-primary {
+        width: 100%;
+    }
+}

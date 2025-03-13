@@ -1,14 +1,14 @@
 /* Importação de fontes */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Ubuntu:wght@700&family=Merriweather+Sans:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
+   
     background-color: #14213D;
     max-width: 100%;
     overflow-x: hidden;
@@ -20,9 +20,18 @@ section {
     max-width: 100vw;
     overflow: hidden;
 }
+/* === CONTEÚDO PRINCIPAL === */
+.container {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    width: 100%;
+    overflow: hidden;
+}
 
-/* === TÍTULO PRINCIPAL === */
-.title {
+/* === TÍTULO HERO === */
+.title-hero{
+    font-family: 'Raleway', sans-serif;
     margin-top: 20px;
     font-size: clamp(30px, 5vw, 65px); /* Adapta ao tamanho da tela */
     font-weight: 800;
@@ -31,7 +40,23 @@ section {
     text-align: left; /* Ajustado para centralizar */
 }
 
+.subtitle-hero {
+    font-family: "Merriweather Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #FFF;
+    text-align: left;
+    max-width: 550px;
+    margin-top: 20px;
+}
+
+/* === TÍTULO PRINCIPAL === */
 .title-center {
+    font-family: 'Raleway', sans-serif;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 15px;
@@ -47,13 +72,16 @@ section {
 
 /* === SUBTÍTULO === */
 .subtitle {
+    font-family: "Merriweather Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
     font-size: 22px;
     font-weight: 600;
     line-height: 1.5;
     color: #FFF;
-    text-align: left;
-    max-width: 550px;
-    margin-top: 20px;
+    justify-items: center;
+    text-align: center;
 }
 
 strong {
@@ -64,6 +92,7 @@ strong {
 /* === BOTÃO DE AÇÃO === */
 .btn-container {
     margin-top: 20px;
+
 }
 
 .btn-primary {
@@ -78,9 +107,20 @@ strong {
     margin-bottom: 30px;
     cursor: pointer;
     transition: 0.3s;
+    
 }
 
 .btn-primary:hover {
     background: #fff;
     color: #FCA920;
+}
+
+@media (max-width: 480px) {
+    .title-center {
+        font-size: 30px;
+    }
+
+    .btn-primary {
+        width: 100%;
+    }
 }

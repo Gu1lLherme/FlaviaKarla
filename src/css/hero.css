@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    overflow: hidden;
+    overflow: hidden; 
 }
 
 /* === FUNDO COM OPACIDADE === */
@@ -40,60 +40,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-/* === TÍTULO PRINCIPAL === */
-.title {
-    margin-top: 20px;
-    font-size: clamp(30px, 5vw, 65px); /* Adapta ao tamanho da tela */
-    font-weight: 800;
-    line-height: 1.2;
-    color: #FFF;
-    text-align: left; /* Ajustado para centralizar */
-}
-
-.title .highlight {
-    color: #FCA920;
-}
-
-/* === SUBTÍTULO === */
-.subtitle {
-    font-size: 22px;
-    font-weight: 600;
-    line-height: 1.5;
-    color: #FFF;
-    text-align: left;
-    max-width: 550px;
-    margin-top: 20px;
-}
-
-.subtitle strong {
-    font-weight: 700;
-}
-
-.subtitle .highlight {
-    color: #FCA920;
-}
-
-/* === BOTÃO CTA === */
-.cta {
-    background: #FCA920;
-    color: #FFF;
-    font-size: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 60px;
-    padding: 20px 40px;
-    margin-top: 30px;;
-    cursor: pointer;
-    transition: 0.3s;
-    text-align: center;
-}
-
-.cta:hover {
-    background: #fff;
-    color: #FCA920;
 }
 
 /* === CONTAINER PARA ORGANIZAR LOGO, BOTÃO E MENTORA === */

@@ -12,11 +12,31 @@
     <link rel="manifest" href="image\favicon\site.webmanifest">
 
 
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Swiper.js JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- BootStrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- BootStrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="css/frame2.css">
     <link rel="stylesheet" href="css/frame3.css">
-    <link rel="stylesheet" href="css/test/frame4.css">
+    <link rel="stylesheet" href="css/frame4.css">
+    <link rel="stylesheet" href="css/frame5.css">
+    <link rel="stylesheet" href="css/frame6.css">
+    <link rel="stylesheet" href="css/frame7.css">
+    <link rel="stylesheet" href="css/footer.css">
 
 </head>
 
@@ -28,11 +48,11 @@
         <!-- Conteúdo principal -->
         <div class="container-hero">
             <div class="text-content">
-                <h1 class="title">
+                <h1 class="title-hero">
                     Mentoria <span class="highlight">Exclusiva</span> para o<br>
                     <span class="highlight">Exame do CFC</span>
                 </h1>
-                <p class="subtitle">
+                <p class="subtitle-hero">
                     <strong>Descomplico</strong> a <span class="highlight">contabilidade</span> para você
                     <span class="highlight">aprender</span> e <span class="highlight">fixar</span> com
                     <strong>facilidade</strong>
@@ -50,8 +70,9 @@
                         <img src="image/frame_1/Logo-fnd-escuro.png" alt="Logo Flavia Karla">
                     </div>
 
-                    <!-- Botão CTA no centro -->
-                    <button class="cta">QUERO ENTRAR NA MENTORIA</button>
+                    <div class="btn-container">
+                        <button class="btn-primary">QUERO ENTRAR NA MENTORIA</button>
+                    </div>
 
                     <!-- Imagem da Mentora -->
                     <img src="image/frame_1/img_hero_1.png" alt="Flavia Karla" class="mentora">
@@ -73,29 +94,29 @@
 
             <div class="grid-modulos">
 
-                <div class="modulo-box">
-                    <p>
+                <div class="beneficio-box">
+                    <p class="subtitle">
                         Juntos, sua decisão agora pode mudar tudo.
                         Muitos já começaram essa jornada, e o próximo passo está nas suas mãos!
 
                     </p>
                 </div>
 
-                <div class="modulo-box">
-                    <p>Caminhada sozinho,
+                <div class="beneficio-box">
+                    <p class="subtitle">Caminhada sozinho,
                         sem direcionamento, é complicado.
                         Na Tropa SENTA, o acompanhamento faz diferença para quem se compromete!</p>
                 </div>
 
                 <div class="beneficio-box">
-                    <p>Você é livre, mas conhecimento
+                    <p class="subtitle">Você é livre, mas conhecimento
                         transforma escolhas.
                         O que você aprende hoje
                         pode abrir portas que antes pareciam distantes.</p>
                 </div>
 
                 <div class="beneficio-box">
-                    <p>“Sumimasen”, isto não acaba aqui…</p>
+                    <p class="subtitle">“Sumimasen”, isto não acaba aqui…</p>
                 </div>
             </div>
 
@@ -107,12 +128,14 @@
         </div>
     </section>
 
+    <!-- FRAME 3-->
     <section class="section-roadmap">
-        <div class="background-overlay"></div>
+
+        <div class="roadmap-bg"></div>
 
         <div class="container">
             <h1 class="title-center"><strong>Mentoria</strong> para o <span class="highlight">Exame de CFC</span></h1>
-            <h3 class="section-subtitle">Módulos da Mentoria</h3>
+            <h3 class="subtitle" style="margin-bottom: 20px;">Módulos da Mentoria</h3>
 
             <div class="grid-modulos">
                 <!-- Modulo - 1 -->
@@ -129,7 +152,8 @@
                                 xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE1klEQVR4nO2dS4gcRRiAK0Zd8ZUcBDVevIh5iOsmKEiiYjTKmohovIj4jhiW3KMHwZuYmwd1BcGTQlSym42gGEWMRzWmjUa8qNnJRTAvEnAV5JPf/Is9Y8/0s7r7n6kPBpbdmXp801NbXf9fNc4FAoFAIBAIBGIAE8A+4JQ+5OeJ+HMCJQFuAxb4P/K728uWH3D/Sr4U6NCfY8BlQVb5q/kV0tkVRP8n7AZgq3zUgaUZJa8C/swg+i9gTcYyl2obtmZ9jQmAa4DPesTMA88MEg4sBw6RHXnu8hTB27TuOJ8CK5xlgIuA7wbIkb9tBpbEXrME2AT8SH7kNfcklLc5pR3yJo05qwBPZBQ0D8wCcyn/+LLS0bJmE67gfjzmrAJMY4dpZxVgN3bY7awC7MEOe5xVdJy0wpyzCnAAO3zhDE/tTmOHUyaneMAO7DHlLAHcApzFHmeBm52R4WKHUcmLSNunGh9GVOZTwJvAe/qQRfgvjY3JWcZs+Wf+Qayf03q3O1bHAtHh1CYOPxFwtU/Rvatwo8x+n+vJgW5W+RD9cE8lAXjIh2iJSgS62eBD9Pk51nZHgU7WkFwR2RIKCpxjmxfJsbjboJDQqHBEPuHeRKtsib+NOlu8So4FO62N1QvATuAqfezMmMaQxNF48Ne37DljkicT+vB8wfL21iJZG/khhiULcgtdsMx9rg506KgiJaAxySVFd2oZOoB7MS5ZAF4oUf4m5xNN0yqSQdQ2yZN90oDzTO+W+ZK8RpcHR11yPI1sdZWCLwZeqqhxPpHp2v0Zhr0/KqxTslhfBS4vK/kOTfRuOws1XslJHCu88wBY66lhB4DtGlv8aggkx9txUxHREgesmnd6UmplRfCtIZC8yGwR0RKcrJprE+o5r6DstkkWThQRfbLiRvwNXNinrryy2yhZON6W9YyNA+rLKrutkgsPHRMeGvsTcEUJ2W2WLNPG8dyiYxspq17XiArKbrPkTun4oacbliOyLpyycPV6wzcjeW5YqttQqnv+DjZwZS+09Eo+6CWvQzu0DPihZtnjLZT8fenb7jSAuytudDRIdkvH5DurN1tPzDDKK7tByb/WGTP0EcqKsspuUHKxuXILg7NRmuyGJde3Ta6GdIOon+wWSBZ+ritmuKWGzkTAlQn1Ni15kUnfkutMCfsNeBF4EnhbF6XaQuQtwVFFP9t0D1vE0z6vZmupYD456uWq1gWmQDe3+hAtZxAFunnAV15HoJvrKhetsvf3VDTKfORFsopekfPkrmHlm955vg/ZY3LQE/BGbOvujOZr+IicN8VJ7dNMrJ/S50f7BZlrQ9+EKeOb7s9ogk/7z+6QoxiMyj4DrHOW0CvbGs85a+gwYmnMPtH42FsUORAKO3zurGJs99aMs4qxAwbfd1YxdmTmu84qOsG3wmvOKsDjGTv5i96B7a1ozXtey5rR9IAsPOKsolO8QwM6J2Gx+xIO1r6rYEaUHKy1sc9B3YdT1i4ucJbRHaqfFDh6XtLPvs0h+etByYaxo+d7s2M/9r5AVCfASuBBYH2OL1NYrRmbaUi26cqMZYrwDdqW60t3bFgAdmUQ/XLT7RyFL7yZBy5pup1DAedOKEtKMpffrW+6fUMFMK5TtuPA7zp1u7HpdgUCgUAgEAi4VvEPHNl67gwTTZoAAAAASUVORK5CYII=" />
                         </defs>
                     </svg>
-                    <p>Aulas e oficinas de questões semanais ao vivo, focadas nas áreas mais cobradas do exame.</p>
+                    <p class="subtitle">Aulas e oficinas de questões semanais ao vivo,
+                        focadas nas áreas mais cobradas do exame.</p>
                 </div>
 
                 <!-- Modulo - 2 -->
@@ -145,7 +169,8 @@
                                 xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAACjUlEQVR4nO3cX04TQQDH8X2ScgJAXzAKV9AHFYx6HvAYKM8K8RaGiH8S4inAE5iUqglC8PFrho5maXa2y3Z2Zqfz+yQkTSAzu9+W7WzbbVGIiIiIiIiIiIiISFPAJrAPnAAX5OfC7rtpsOn9kQPcBb7E3sse+gys+or8EBjF3qMeOwUezBp5FRjG3pME/ADuzRJah4vmjtpGfnqDSWRso01o88xa5RLYApaLzADLdt//ONq8bTPoN8dgW0XmgJeONsdtBjt3DLZUZA5YcrT53WawSp1seYK89VHoegodiEIHotCBKHQgCh2IQgei0IFkHRoYAK+A7/bH3F7oaK48QwOL9h2PSa87mi+/0MACcODY5FFHc+YVmvrIxrCjefMJzfiY/JF6OnR4iHw4JbI5Zg86mj+9RzTjf/9d+47yqb098BB5sYvtTTn0bsVUn6pi2zvlQ8zIKYceOaa7Fhu4BbyPHTnl0MOacFex+xR53g4dZQdTlnBBI9ttrhRvoGZzDRxndU0FjZxs6IYnHr2JnHTolrGjRE4+9A1jR4s8F6Ebxo4aeW5CT4kdPfJchS6tRnZKL+TvdPXaRdah+0yhA1HoQBQ6EIUORKEDUehAFDoQhQ5EoQNR6EAUOsHQrusMs7tidhJw29HmrPB45ex2kTk8Xzm75xjMXAe9DawUmQFWbGTXteBv2gz6xDGYuD1qew+aD69IM4etIpe+NsG8syH1zCet7rRdXYg/Z3WrC/HnxIR+53FAqbZnQr9w/FL8efbvOH3kcVC57mv5CXEd+DXxBzI703RtcvWxodhe/QQeu5Z6a+ah7ne+LJlD8f0mJyrP7ffeHWud3ci5bbX//4lPRERERERERKSYX38BLiSlWbSae3AAAAAASUVORK5CYII=" />
                         </defs>
                     </svg>
-                    <p>Plano de estudos personalizado, ajustado à sua rotina e objetivos, garantindo máxima eficiência.
+                    <p class="subtitle">Plano de estudos personalizado, ajustado à sua rotina e objetivos, garantindo
+                        máxima eficiência.
                     </p>
                 </div>
 
@@ -162,7 +187,8 @@
                                 xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFEElEQVR4nO2dz4scRRTHK5K4IglKQJNsjD8gFxXxIIjoruhBIZA/wBy8e4k/iMkESQyIYnRzNMlJQfaqkogmCCoIBtEV/JWbmoN6WOMPUKObyZr9SDE1OJl0dXd11dS86qkPzGXoevXed3peVb2qnlEqk8lkMplMJhmAq4AngE+Bc4yXLnAKuFu1CeAG4CvksQQ8rFp0J0sUuV1im3QhnaXkxTY5OQWWkhYb+AtZ/N1KsZHHbMWHfx7YrlIDYaieT+0TG2Go//1ql9gIQ13qW3vERhjqcv/aITbCUMU+pi82wlB2P9MWG2Gocl/TFRthqGp/0xQbYah6PqcnNsJQ9f1OS2yEodx8T0dshKHc/U9DbIShmsUgX2yEoZrH8WCNEuv49iCRx/QIxT4VVj0356TR8YynTOxuOOXcHZNGV4s9qjs7rHpuTk0UKgsdhyx0JLLQkchCRyILHYksdCSy0JHIQkdCutBdYI9erZlXx7xXeX0E/+v4k4zQnYJ2HZfrI8TRaYPQmwrabXS5PkIcG9sg9HRBu80u10eIY3NbU8del+sjxLG3DUJ3+6VLh8HQq9Q5qYNhm1idhY7DR3rgzHd0HL4ApnLqiMO7wOfAWeB7YB64J+foeMwBV+TBMA6vBRc7hVoHsBp4xpw4suIZ4zCvBhVbeq0D2AR8UsdJzxhHK7bHEnza5fqGvt0B/FBXFc8YRyu2VKGBW4Gfa/i2DJwAniyxtRv4GLg41Fanoh3AQkUfh1pZ66BXifupwid9EulFlw/V3ByHzIFHLfI28/61FWKveE/9pNU66A18evVWxkn9Yy4eMd8IzAy9VyX2fNP++h2kxApwAFjlFbRdizKxv/M1nhKPBVPVrscjlr4XfQ2nwlwwNe1abCuZq3/mazwF3hvJsvhSHWYqFkQHfDuQzrKe6nnEdw2wD3gd2Gmr2pmtMNsB9l+B9W0X+ohHbDcDZ4bsnbANpsDzFh9+894wkFDrAO612NELjJs8lu7fWuzOlPz+37+WNg808WPQ+NhrHcAui50PGsa0Hvi6xL8dJW31HL2I/U18GTQ89iU48IbFztMN4llbUYS6UPYtMcv1Io67+iJR6C8tdu53tDMFvF8Ry1M1Zh9FnHbxpcjw2GsdwI8WOxsc7RytiOOFGja2WNr+7uJLkeGx1zqAfyx2phzv5jKfXqlp52pbTHV9sRmWzFrH3KxrIUXM113wmA+siPNtFnqrYyzvFNg45jIH1unK4ssvjQQeMCyZGcdYrjfHCFZMGjnqen4DuG+cg+G42N0wpnVND8iUTO/ebGJv0LBkPvQKrpkeesuriGd9DUvmAnBdMBXr5efhfcU+s77GpfNyMCWrtdCnlGzVuzW+xqVzTg9ywdQs30fUm7ZFHA7RQQocG9U+odFgFfCWpW89g7mzjT89b2NXEFWLNdhv7dW3mJTgnyksA48GCfryzdiLJYPx7aE6epx0WKmqvjmmi30lImsOhuhrcG1vK1NK5W1dZfMc+Gw5uc9C8KcCzBZOamL/CTynRXOcJ8+VzC76LAK3BBV56M7eaXYnUhkgMV/9k6Ys+5AR80rz2mD2I22HHIv4A7hLTRL0ju1WHXYMyeLEidxHf4XNQz2jZmFk6SIV6KWBl8x0KzTa5sHoj8NJBrjNzDhsOykuaBvHg82TW5y7j5hijyu6zeEgy+oJSymz5sy0nhefNse39O6KfmlRv9FFe3ONPkrQuAr3H7lIW4+dlLtFAAAAAElFTkSuQmCC" />
                         </defs>
                     </svg>
-                    <p>Análise de desempenho contínua, com relatórios semanais, quinzenais e mensais.</p>
+                    <p class="subtitle">Análise de desempenho contínua, com relatórios semanais, quinzenais e mensais.
+                    </p>
                 </div>
 
                 <!-- Modulo - 4 -->
@@ -178,7 +204,7 @@
                                 xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAADFUlEQVR4nO2ZMW4TQRSGJ01QKNyHNC7gAogrEC6QC0Abww2gNkfAdBQUXANIoCG5ggUJDUWETUPhD40yRRSR7M7u2/W/4/dJliLZ+ef9z2/njd+E4DiO4ziO4ziO4ziO4xQLcAd4AXwBlukV/34e31t3fEUA7AGn3MxJ/My64yyhkk9vSfLVZHtlNyVtF3WZNF5o0wG+ZiT6eN3xDhZgkZHoRRgaiHT5tG5dfofCuvy3rrs8sAW8BFZFbh3kdfntjmLYAd6Tz6TULn/Ywfq7mQ2w8y++E8gzeWS89kPge8Mk75Xc5ZfA2GjdA+BPxXo/4j6c1o1xHsXtYlCVHAH2M5tP5C8wa5rwjKYXn7TdMGSAEfCmQZKvJ/wdcD+z8cb/qeIDcDcMGS6reN4iwY0SXrPpxS9+Gqs+DLyKZy2ruCrhUf8B8Az4BPxK++tx2m9vI+7XB2HIdFDF1pwBj8LAq/htzSqepyb1GbhI1fgReJqqdJaq1pphNL3/zCgu0jHoVc0qXqXGOKqx1tg44fHX4E4oYEZRxRx43GDdtglfpadnq6QZxU1GZ3WquKOEL0OhM4rrVbxvHMu42PFmg0HMKjXGUUfxxB5R5HhzkZnkJx3HE2cQRY43F0qPKrCdpmqtxptJ5zVwXnHunvYyXFK8xATupduYxuPNlMC6TPswFe/y5B5VLk9Dh+ksnz3eTNVal7O+DLV+VNUgkz5/sJyUdBOBYqKvNI9JmpAtBn0TEYQT3RbEunzJiZ4qdfmSE32e4etnD/EUm+gsNi2eYo0hFk+xxhCLR84YRqcXT3Si69OLVTxyYGTM6vRiFY8cGBlT05EDsQRZ6ciBWIKsdMxQ6/KI6Zih1uUR0zFDrcsjpmOGmjHEdMxQM4aYjhlqxhDTMUPNGGI6ZqgZQ0zHDDVjiOmYoWYMMR0z1IwhpmOGmjHEdMxQM4aYjhlqxhDTMUPNGGI6ZqgZQ0zHDDVjiOmYoWYMMR0z1IwhpmOGmjHEdMxQM4aYjhlqxhDTMUPNGGI6ZqgZQ0zHcRzHcRzHcRzHcRwnbAD/AHS6nEKS43zVAAAAAElFTkSuQmCC" />
                         </defs>
                     </svg>
-                    <p>Revisões programadas, para fixar o conteúdo e evitar o esquecimento.</p>
+                    <p class="subtitle">Revisões programadas, para fixar o conteúdo e evitar o esquecimento.</p>
                 </div>
 
                 <!-- Modulo - 5 -->
@@ -195,7 +221,8 @@
                         </defs>
                     </svg>
 
-                    <p>Simulados inteligentes: um simulado inicial e simulados mensais para medir o progresso.</p>
+                    <p class="subtitle">Simulados inteligentes: um simulado inicial e simulados mensais para medir o
+                        progresso.</p>
                 </div>
 
                 <!-- Modulo - 6 -->
@@ -212,7 +239,8 @@
                         </defs>
                     </svg>
 
-                    <p>Técnica Pomodoro com cronômetro, para potencializar seu foco e produtividade.</p>
+                    <p class="subtitle">Técnica Pomodoro com cronômetro, para potencializar seu foco e produtividade.
+                    </p>
                 </div>
                 <!-- Modulo - 7 -->
                 <div class="modulo-box">
@@ -227,7 +255,7 @@
                                 xlink:href="data:image/png;base64,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" />
                         </defs>
                     </svg>
-                    <p>Acompanhamento individual, com feedback especializado para corrigir falhas.</p>
+                    <p class="subtitle">Acompanhamento individual, com feedback especializado para corrigir falhas.</p>
                 </div>
 
                 <!-- Modulo - 8 -->
@@ -244,7 +272,7 @@
                         </defs>
                     </svg>
 
-                    <p>Encontros semanais via Meet, para solucionar dúvidas e reforçar conteúdos.</p>
+                    <p class="subtitle">Encontros semanais via Meet, para solucionar dúvidas e reforçar conteúdos.</p>
                 </div>
             </div>
 
@@ -253,6 +281,338 @@
             </div>
         </div>
     </section>
+    <!-- FRAME 4 - DEPOIMENTOS -->
+    <section class="section-depoimentos">
+        <div class="depoimentos-bg"></div>
+
+        <div class="container">
+            <h1 class="title-center">
+                Veja o Que <span class="highlight"><strong>Nossos Alunos</strong></span> Dizem
+            </h1>
+
+            <!-- Slider de Depoimentos -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <img src="avatar1.png" alt="João Silva">
+                            <h4>João Silva</h4>
+                            <p class="role">Líder Contábil da EMS</p>
+                            <p class="testimonial-text">“Nunca imaginei que aprender contabilidade fosse tão prático e
+                                claro...”</p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <img src="avatar2.png" alt="Maria Oliveira">
+                            <h4>Maria Oliveira</h4>
+                            <p class="role">CEO Sony</p>
+                            <p class="testimonial-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                                doloremque quis autem illum esse natus explicabo odio veniam praesentium enim quas ipsum
+                                quia, quo ducimus itaque, ut voluptas neque accusantium!</p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <img src="avatar3.png" alt="Lucas Pereira">
+                            <h4>Lucas Pereira</h4>
+                            <p class="role">Product Owner</p>
+                            <p class="testimonial-text">“Fazer parte dos cursos foi a melhor decisão que tomei...”</p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <img src="avatar4.png" alt="Guilherme">
+                            <h4>Guilherme</h4>
+                            <p class="role">Líder Contábil</p>
+                            <p class="testimonial-text">“Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Alias, sequi doloremque! Magnam incidunt similique pariatur expedita ullam repellat
+                                perferendis aliquid dolor inventore? Totam, numquam nemo! Harum distinctio natus dolore
+                                est.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Botões de navegação -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+            <!-- Botão CTA -->
+            <div class="btn-container">
+                <button class="btn-primary">QUERO ENTRAR NA MENTORIA</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Swiper.js -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2
+                },
+                1024: {
+                    slidesPerView: 3
+                }
+            }
+        });
+    </script>
+
+    <!-- FRAME 5 - MENTORA -->
+    <section class="section-mentora">
+        <div class="mentora-bg"></div>
+
+        <div class="container-mentora">
+            <!-- Imagem da Mentora -->
+            <div class="mentora-img">
+                <img src="image/frame_5/perfil_moldura.png" alt="Mentora Flávia Karla">
+            </div>
+
+            <!-- Conteúdo da Mentora -->
+            <div class="mentora-content">
+                <h3 class="mentora-subtitle">Conheça quem está por trás do Conteúdo</h3>
+                <div class="mentora-line"></div>
+                <div class="mentora-line-under"></div>
+                <h1 class="mentora-name">Flávia Karla</h1>
+                <p class="mentora-desc">
+                    Sou Flávia Karla, contadora com 16 anos de experiência no mercado, Mestra em Administração pela UFS,
+                    especialista em Gestão Fiscal, Planejamento Tributário, Docência em Educação Presencial e a
+                    Distância. Coordenadora há 8 anos do NAF da Universidade Tiradentes. Professora de Ciências
+                    Contábeis e Administração na UNIT, membro ativo do GPGNTI e acadêmica titular da Academia Sergipana
+                    de Contabilidade.
+
+                    Proprietária e Entrepreneur na CDF Cursos e Consultoria Contábil, que atua com cursos e consultorias
+                    em gestão, contabilidade e áreas fiscais. Membro da Câmara das Mulheres Empresárias da Fecomércio
+                    Sergipe, palestrante em negócios, gestão e empreendedorismo.
+
+                    Formando mais de 4685 alunos, minha visão é que meus pupilos conquistem aprovação na área. Minha
+                    missão é descomplicar a contabilidade e ajudar as pessoas na compreensão, entendimento e estudo.
+                </p>
+                <p class="mentora-desc">
+                <ul class="mentora-highlight">
+                    <li>
+                        Mestra em Administração pela Universidade Federal de Sergipe (UFS)
+                    </li>
+                    <li>
+                        Mais de 16 anos atuando como contadora para Concursos
+                    </li>
+                    <li>
+                        Proprietária e Entrepreneur na CDF Cursos e Consultoria Contábil
+                    </li>
+                </ul>
+
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FRAME 6 - BÔNUS EXCLUSIVO -->
+    <section class="section-bonus">
+        <div class="bonus-bg"></div>
+
+        <div class="container">
+            <!-- Título -->
+            <h1 class="title-center">BÔNUS <span class="highlight">EXCLUSIVO</span></h1>
+
+            <!-- Lista de Bônus -->
+            <div class="bonus-list">
+                <ol>
+                    <li>Aula <span class="highlight">extra</span> de <span class="highlight">Interpretação de
+                            Texto</span></li>
+                    <li>Metodologia de <span class="highlight">Controle Emocional</span>para a prova</li>
+                    <li><span class="highlight">Código de ética</span> do contador esquematizado (<span>NBC PG
+                            01</span>)</li>
+                    <li><span class="highlight">Correção</span> de 2 <span
+                            class="highlight"><strong>simulados</strong></span> ao vivo</li>
+                    <li><strong>Direcionamento</strong> de <span class="highlight">estudo</span></li>
+                </ol>
+            </div>
+
+            <!-- Botão CTA -->
+            <div class="btn-container">
+                <button class="btn-primary">QUERO ENTRAR NA MENTORIA</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FRAME 7 - FAQ -->
+    <section class="section-faq">
+        <div class="faq-bg"></div>
+
+        <div class="container">
+            <h1 class="title-center">Ainda Tem <span class="highlight">Dúvidas</span>?<br><span
+                    class="highlight">Nós</span> Temos as <span class="highlight">Respostas</span>!</h1>
+            <p class="subtitle">Encontre aqui as respostas para as perguntas mais comuns antes de começar</p>
+
+            <!-- Accordion FAQ -->
+            <div class="accordion accordion-flush" id="accordionFAQ">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1">
+                            Quais são os tipos de mentoria e qual é a duração de cada um?
+                        </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body">
+                            Nossa mentoria oferece diferentes pacotes de duração, desde intensivos até programas
+                            completos.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                            Como, quando e aonde assisto as aulas da mentoria?
+                        </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body">
+                            As aulas são disponibilizadas em uma plataforma online, acessível a qualquer momento.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                            Como acesso a mentoria?
+                        </button>
+                    </h2>
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body">
+                            O acesso é liberado após a confirmação do pagamento, e você receberá instruções por e-mail.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                            Quais são as formas de pagamento?
+                        </button>
+                    </h2>
+                    <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body">
+                            Aceitamos pagamentos via boleto, cartão de crédito, Pix e transferência bancária.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botão de contato -->
+            <div class="faq-button-container">
+                <button class="btn-faq">AINDA TEM DÚVIDAS? FALE CONOSCO!</button>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-bg"></div> <!-- Fundo com Opacidade -->
+
+        <div class="container footer-content">
+            <!-- Logo -->
+            <div class="footer-logo">
+                <img src="image/frame_8/Logo-fnd-escuro.png" alt="Logo">
+            </div>
+
+            <!-- Frase Motivacional -->
+            <p class="footer-quote">
+                "A cada página estudada, você se aproxima do seu sonho. <br> Persistência hoje, vitória amanhã!"
+            </p>
+
+            <!-- Contatos -->
+            <div class="footer-contact">
+                <p>+55 (79) 9938-1138</p>
+                <p>profaflaviakarla@gmail.com</p>
+            </div>
+
+            <!-- Redes Sociais -->
+            <div class="footer-social">
+                <a href="#" class="whatsapp">
+                    <i class="fab fa-whatsapp">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_0_200)">
+                                <path
+                                    d="M23.8125 6.1375C21.475 3.7875 18.3625 2.5 15.05 2.5C8.225 2.5 2.6625 8.0625 2.6625 14.8875C2.6625 17.075 3.2375 19.2 4.3125 21.075L2.5625 27.5L9.125 25.775C10.9375 26.7625 12.975 27.2875 15.05 27.2875C21.875 27.2875 27.4375 21.725 27.4375 14.9C27.4375 11.5875 26.15 8.475 23.8125 6.1375ZM15.05 25.1875C13.2 25.1875 11.3875 24.6875 9.8 23.75L9.425 23.525L5.525 24.55L6.5625 20.75L6.3125 20.3625C5.2875 18.725 4.7375 16.825 4.7375 14.8875C4.7375 9.2125 9.3625 4.5875 15.0375 4.5875C17.7875 4.5875 20.375 5.6625 22.3125 7.6125C24.2625 9.5625 25.325 12.15 25.325 14.9C25.35 20.575 20.725 25.1875 15.05 25.1875ZM20.7 17.4875C20.3875 17.3375 18.8625 16.5875 18.5875 16.475C18.3 16.375 18.1 16.325 17.8875 16.625C17.675 16.9375 17.0875 17.6375 16.9125 17.8375C16.7375 18.05 16.55 18.075 16.2375 17.9125C15.925 17.7625 14.925 17.425 13.75 16.375C12.825 15.55 12.2125 14.5375 12.025 14.225C11.85 13.9125 12 13.75 12.1625 13.5875C12.3 13.45 12.475 13.225 12.625 13.05C12.775 12.875 12.8375 12.7375 12.9375 12.5375C13.0375 12.325 12.9875 12.15 12.9125 12C12.8375 11.85 12.2125 10.325 11.9625 9.7C11.7125 9.1 11.45 9.175 11.2625 9.1625C11.075 9.1625 10.875 9.1625 10.6625 9.1625C10.45 9.1625 10.125 9.2375 9.8375 9.55C9.5625 9.8625 8.7625 10.6125 8.7625 12.1375C8.7625 13.6625 9.875 15.1375 10.025 15.3375C10.175 15.55 12.2125 18.675 15.3125 20.0125C16.05 20.3375 16.625 20.525 17.075 20.6625C17.8125 20.9 18.4875 20.8625 19.025 20.7875C19.625 20.7 20.8625 20.0375 21.1125 19.3125C21.375 18.5875 21.375 17.975 21.2875 17.8375C21.2 17.7 21.0125 17.6375 20.7 17.4875Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_0_200">
+                                    <rect width="30" height="30" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+
+
+                    </i></a>
+                <a href="#" class="instagram">
+                    <i class="fab fa-instagram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7 0.75C3.54875 0.75 0.75 3.54875 0.75 7V17C0.75 20.4513 3.54875 23.25 7 23.25H17C20.4512 23.25 23.25 20.4513 23.25 17V7C23.25 3.54875 20.4512 0.75 17 0.75H7ZM19.5 3.25C20.19 3.25 20.75 3.81 20.75 4.5C20.75 5.19 20.19 5.75 19.5 5.75C18.81 5.75 18.25 5.19 18.25 4.5C18.25 3.81 18.81 3.25 19.5 3.25ZM12 5.75C15.4512 5.75 18.25 8.54875 18.25 12C18.25 15.4513 15.4512 18.25 12 18.25C8.54875 18.25 5.75 15.4513 5.75 12C5.75 8.54875 8.54875 5.75 12 5.75ZM12 8.25C11.0054 8.25 10.0516 8.64509 9.34835 9.34835C8.64509 10.0516 8.25 11.0054 8.25 12C8.25 12.9946 8.64509 13.9484 9.34835 14.6517C10.0516 15.3549 11.0054 15.75 12 15.75C12.9946 15.75 13.9484 15.3549 14.6517 14.6517C15.3549 13.9484 15.75 12.9946 15.75 12C15.75 11.0054 15.3549 10.0516 14.6517 9.34835C13.9484 8.64509 12.9946 8.25 12 8.25Z"
+                                fill="white" />
+                        </svg>
+
+                    </i></a>
+                <a href="#" class="youtube">
+                    <i class="fab fa-youtube">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M27.0489 7.87557C26.7614 6.80057 25.9139 5.95307 24.8389 5.66557C22.8889 5.14307 15.0714 5.14307 15.0714 5.14307C15.0714 5.14307 7.25391 5.14307 5.30391 5.66557C4.22891 5.95307 3.38141 6.80057 3.09391 7.87557C2.57141 9.82557 2.57141 15.1431 2.57141 15.1431C2.57141 15.1431 2.57141 20.4606 3.09391 22.4106C3.38141 23.4856 4.22891 24.3331 5.30391 24.6206C7.25391 25.1431 15.0714 25.1431 15.0714 25.1431C15.0714 25.1431 22.8889 25.1431 24.8389 24.6206C25.9152 24.3331 26.7614 23.4856 27.0489 22.4106C27.5714 20.4606 27.5714 15.1431 27.5714 15.1431C27.5714 15.1431 27.5714 9.82557 27.0489 7.87557ZM12.5714 18.3906V11.8956C12.5714 11.4143 13.0927 11.1143 13.5089 11.3543L19.1339 14.6018C19.5502 14.8418 19.5502 15.4443 19.1339 15.6843L13.5089 18.9318C13.0927 19.1731 12.5714 18.8718 12.5714 18.3906Z"
+                                fill="white" />
+                        </svg>
+                    </i></a>
+            </div>
+
+
+        </div> <!-- Copyright -->
+        <p style="color: fff;">
+            &copy; <span id="year"></span> Flávia Karla. Todos os direitos reservados.
+        </p>
+        <div>
+            <div class="col-auto">
+                <a href="/politica-de-privacidade" class="text-white">Política de Privacidade</a>
+                <A:blank class="text-center">|</A:blank>
+                <a href="/termos-de-uso" class="text-white">Termos de Uso</a>
+            </div>
+        </div>
+
+        <!-- Aviso Legal -->
+        <p class="text-center text">
+            Aviso Legal: Nenhuma afirmação contida neste produto deve ser interpretada como uma
+            garantia de aprovação.
+        </p>
+
+
+        <!-- Script para atualizar o ano automaticamente -->
+        <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
+
+    </footer>
+
 </body>
 
 </html>

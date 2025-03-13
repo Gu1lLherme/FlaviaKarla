@@ -3,31 +3,27 @@
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
     text-align: center;
-    padding: 10vh 5vw; /* Adapta a altura e largura ao tamanho da tela */
-    background: url("../image/frame_3/img_fundo_mentoria.png") center/cover no-repeat;
-    min-height: 100vh;
+
 }
 
-/* === SOBREPOSIÇÃO DA IMAGEM DE FUNDO === */
-.background-overlay {
+.roadmap-bg{
+    background: url("../image/frame_3/img_fundo_mentoria.png") center/cover no-repeat;
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(20, 33, 61, 0.85); /* Opacidade 85% para melhor visibilidade */
     z-index: 0;
 }
 
-/* === CONTEÚDO PRINCIPAL === */
-.container {
-    position: relative;
-    z-index: 1;
-    max-width: 1200px;
+/* === SOBREPOSIÇÃO DA IMAGEM DE FUNDO === */
+.section-roadmap::before {
+    content: "";
+    position: absolute;
     width: 100%;
-    overflow: hidden;
+    height: 100%;
+    background-color: rgba(20, 33, 61, 0.9);
+    z-index: 1;
 }
 
 /* === SUBTÍTULO === */
@@ -50,16 +46,14 @@
 
 /* === CAIXAS DOS MÓDULOS === */
 .modulo-box {
+    margin: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #14213D;;
-    font-size: 25px;
-    font-weight: 900;
     padding: 3vh 2vw;
     height: auto;  
-    color: #FFF;
     border-radius: 45px;
     border: 3px solid #FFF;
 }
