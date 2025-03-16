@@ -46,7 +46,6 @@ section {
     font-weight: 700;
     font-style: normal;
     font-size: 22px;
-    font-weight: 600;
     line-height: 1.5;
     color: #FFF;
     text-align: left;
@@ -67,7 +66,7 @@ section {
 }
 
 .highlight {
-    color: #FCA920;
+    color: #FCA311;
 }
 
 /* === SUBTÍTULO === */
@@ -77,7 +76,6 @@ section {
     font-weight: 700;
     font-style: normal;
     font-size: 22px;
-    font-weight: 600;
     line-height: 1.5;
     color: #FFF;
     justify-items: center;
@@ -96,7 +94,7 @@ strong {
 }
 
 .btn-primary {
-    background: #FCA920;
+    background: #FCA311;
     color: #FFF;
     font-size: 20px;
     font-weight: 700;
@@ -112,7 +110,7 @@ strong {
 
 .btn-primary:hover {
     background: #fff;
-    color: #FCA920;
+    color: #FCA311;
 }
 
 .position-pix{

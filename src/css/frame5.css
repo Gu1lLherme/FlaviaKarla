@@ -2,10 +2,11 @@
 .section-mentora {
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: left;
-    padding: 80px 20px;
+    text-align: center;
+    padding: 60px 20px;
 }
 
 /* === FUNDO COM OPACIDADE === */
@@ -33,83 +34,92 @@
     max-width: 1200px;
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 40px;
 }
 
 /* === IMAGEM DA MENTORA === */
 .mentora-img {
-    flex: 1;
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .mentora-img img {
     width: 100%;
-    max-width: 600px;
+    max-width: 400px;
     border-radius: 20px;
 }
 
 /* === CONTEÚDO DA MENTORA === */
 .mentora-content {
-    flex: 1;
+    width: 100%;
+    text-align: left;
 }
 
 .mentora-subtitle {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 400;
     color: #FFF;
     margin-bottom: 10px;
 }
 
 .mentora-line {
-    width: 450px;
+    width: 80%;
+    max-width: 450px;
     height: 4px;
     background: #FCA920;
     margin-bottom: 20px;
 }
 
 .mentora-line-under{
-    width: 100px;
+    width: 50%;
+    max-width: 100px;
     height: 4px;
     background: #FCA920;
     margin-bottom: 20px;
 }
 
 .mentora-name {
-    font-size: 50px;
+
+    font-size: 36px;
     font-weight: 800;
     color: #FFF;
     margin-bottom: 20px;
 }
 
 .mentora-desc {
-    font-size: 18px;
+    font-size: 16px;
     color: #FFF;
     line-height: 1.6;
     margin-bottom: 15px;
+    
 }
 
 .mentora-highlight {
     margin-left: 20px;
-    font-size: 18px;
+    font-size: 16px;
     color:#FFF;
     font-weight: 400;
 }
+
 /* === RESPONSIVIDADE === */
-@media (max-width: 1024px) {
-    .container {
-        flex-direction: column;
-        text-align: center;
+@media (min-width: 768px) {
+    .section-mentora {
+        flex-direction: row;
+        text-align: left;
+        padding: 80px 20px;
     }
 
-    .mentora-img {
-        order: -1; /* Move a imagem para cima */
-        margin-bottom: 20px; /* Adiciona espaçamento entre imagem e texto */
+    .container-mentora {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
     }
 
     .mentora-img img {
-        max-width: 300px;
+        max-width: 500px;
     }
 
     .mentora-name {
@@ -117,20 +127,24 @@
     }
 
     .mentora-desc {
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 1024px) {
+    .mentora-img img {
+        max-width: 600px;
+    }
+
     .mentora-name {
-        font-size: 32px;
+        font-size: 50px;
     }
 
     .mentora-subtitle {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .mentora-desc {
-        font-size: 14px;
+        font-size: 18px;
     }
 }

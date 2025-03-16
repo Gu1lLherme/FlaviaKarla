@@ -2,10 +2,11 @@
 .section-bonus {
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 80px 20px;
+    padding: 60px 20px;
     background: #14213D;
 }
 
@@ -18,61 +19,70 @@
     opacity: 0.45;
     z-index: 0;
 }
-
-
-
-
-
-/* === LISTA DE BÔNUS === */
-.bonus-list{
-    background-color: #14213D;
-    padding-top: 20px;
-    padding-bottom: 15px;
-    border-radius: 45px;
-    border: 3px solid #FFF;
-
+.container-bonus {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
 }
+/* === LISTA DE BÔNUS === */
+.bonus-list {
+    align-items: center;
+    background-color: #14213D;
+    padding: 20px;
+    border-radius: 30px;
+    border: 3px solid #FFF;
+    width: 90%;
+    max-width: 900px;
+    text-align: center;
+}
+
 .bonus-list ol {
     list-style: decimal;
-    padding-left: 0;
+    list-style-position: inside ;
+    padding-left: 20px;
     margin: 0 auto;
     max-width: 900px;
-    list-style-position: inside; /* Faz os números ficarem colados no texto */
 }
 
 .bonus-list li {
     font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     color: #FFF;
-    text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
-
-/* === RESPONSIVIDADE === */
-@media (max-width: 1024px) {
+/* === RESPONSIVIDADE (MOBILE-FIRST) === */
+@media (min-width: 768px) {
+    .section-bonus {
+        padding: 80px 20px;
+    }
+    .bonus-list {
+        padding: 30px;
+        border-radius: 45px;
+    }
     .bonus-title {
         font-size: 40px;
     }
-
     .bonus-list li {
-        font-size: 20px;
+        font-size: 22px;
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 1024px) {
     .bonus-title {
-        font-size: 32px;
+        font-size: 50px;
     }
-
     .bonus-list li {
-        font-size: 18px;
+        font-size: 24px;
     }
-
     .btn-primary {
-        width: 100%;
+        width: auto;
     }
 }
